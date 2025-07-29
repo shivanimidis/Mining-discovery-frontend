@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fixed Sidebar with Scrollable Content</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      overflow: hidden; /* disable full page scroll */
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .left-sidebar {
+      width: 20%;
+      background: #f4f4f4;
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      overflow-y: auto; /* if sidebar banners overflow */
+      box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+    }
+
+    .left-sidebar .box {
+      background: white;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .left-sidebar .box img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .main-content {
+      margin-left: 20%;
+      width: 80%;
+      height: 100vh;
+      overflow-y: auto; /* only this will scroll */
+      padding: 30px;
+      background: #fff;
+    }
+
+    .content-block {
+      margin-bottom: 40px;
+      background: #eaeaea;
+      padding: 20px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Fixed Left Sidebar -->
+    <div class="left-sidebar">
+      <div class="box">
+        <img src="https://via.placeholder.com/150x200?text=Banner+1" alt="Banner 1">
+      </div>
+      <div class="box">
+        <img src="https://via.placeholder.com/150x200?text=Banner+2" alt="Banner 2">
+      </div>
+      <div class="box">
+        <img src="https://via.placeholder.com/150x200?text=Banner+3" alt="Banner 3">
+      </div>
+    </div>
+
+    <!-- Scrollable Right Content -->
+    <div class="main-content">
+      <div class="content-block">📄 Content Block 1</div>
+      <div class="content-block">📄 Content Block 2</div>
+      <div class="content-block">📄 Content Block 3</div>
+      <div class="content-block">📄 Content Block 4</div>
+      <div class="content-block">📄 Content Block 5</div>
+      <div class="content-block">📄 Content Block 6</div>
+      <div class="content-block">📄 Content Block 7</div>
+      <div class="content-block">📄 Content Block 8</div>
+      <div class="content-block">📄 Content Block 9</div>
+    </div>
+  </div>
+
+</body>
+</html>
