@@ -71,22 +71,25 @@
     }
 
     .logo-social {
+      
       padding-top: 5px;
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 20px;
+      padding-left: 24px;
     }
 
     .logo {
       height: 70px;
+      
     }
 
     .nav-links {
       display: flex;
       gap: 20px;
       flex-wrap: wrap;
-      padding-left: 25%;
+      
     }
 
     .nav-links a {
@@ -130,7 +133,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-top: 14px;
+  
 }
 
 .search-bar-bg {
@@ -176,7 +179,7 @@
 
 .search-box {
       position: relative;
-      width: 220px;
+      width: 174px;
     }
 
     .search-box input {
@@ -251,15 +254,17 @@
  
 
     .social-icons {
+      
       display: flex;
       align-items: center;
       gap: 10px;
+      padding-left: 32px;
     
       
     }
 
     .social-icons i {
-     
+     background-color: black;
       
      
       color: #8d6d2a;
@@ -1024,7 +1029,7 @@
     .middle img {
       max-width: 100%;
       height: auto;
-      border-radius: 10px;
+    
       margin-bottom: 20px;
     }
 
